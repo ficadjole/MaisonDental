@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "LTSoul";
+    src: url("LTSoul-Medium.otf");
+    src: url("LTSoul-Regular.otf");
+    src: url("LTSoul-SemiBold.otf");
+
+}
+
+@font-face {
+    font-family: "LTSoul-Bold";
+    src: url("LTSoul-Bold.otf");
+}
