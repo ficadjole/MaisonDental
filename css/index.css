@@ -70,6 +70,12 @@ p,
 .footer div,
 .footer a,
 .footer p,
-.footer img {
+.footer img,
+.footer ion-icon, 
+.footer{
   background-color: #f7f5f2;
+}
+
+.icons a{
+  color: #231f20;
 }
