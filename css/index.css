@@ -71,11 +71,25 @@ p,
 .footer a,
 .footer p,
 .footer img,
-.footer ion-icon, 
-.footer{
+.footer ion-icon,
+.footer {
   background-color: #f7f5f2;
 }
 
-.icons a{
+.icons a {
   color: #231f20;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-footer {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-footer-icons{
+    justify-content: center;
+  }
 }
