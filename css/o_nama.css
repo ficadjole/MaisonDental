@@ -41,15 +41,6 @@
   background-color: #ece7db !important;
 }
 
-.office-bg {
-  background-image: url("../images/ordinacija.jpg");
-  height: 70vh;
-  width: auto;
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-}
-
 .about-us-card div,
 a,
 p,
@@ -57,18 +48,22 @@ p,
   background-color: #f7f5f2;
 }
 
+.about-us-card h1 {
+  background-color: #f7f5f2;
+}
+
+.text-card {
+  max-width: 60%;
+}
+
 .image-ana {
   background-image: url("../images/slika.jpg");
   height: 80vh;
-  width: 75%;
+  width: 70%;
   background-position: center;
   background-repeat: none;
   background-size: cover;
   border-radius: 50%;
-}
-
-.service-card p {
-  background-color: #ece7db;
 }
 
 .footer div,
@@ -96,9 +91,5 @@ p,
 
   .mobile-footer-icons {
     justify-content: center;
-  }
-
-  .mobile-card-margin {
-    margin-top: 5%;
   }
 }
