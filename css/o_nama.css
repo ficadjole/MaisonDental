@@ -108,4 +108,8 @@ p,
   .image-ana {
     height: 40vh;
   }
+
+  .text-consultation {
+    font-size: 16px !important;
+  }
 }
