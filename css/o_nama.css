@@ -53,7 +53,11 @@ p,
 }
 
 .text-card {
-  max-width: 60%;
+  width: 60%;
+}
+
+.text-card p {
+  font-size: 28px;
 }
 
 .image-ana {
@@ -91,5 +95,17 @@ p,
 
   .mobile-footer-icons {
     justify-content: center;
+  }
+
+  .text-card p {
+    font-size: 18px;
+  }
+
+  .text-card {
+    width: 100%;
+  }
+
+  .image-ana {
+    height: 40vh;
   }
 }

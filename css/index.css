@@ -101,4 +101,12 @@ p,
   .mobile-card-margin {
     margin-top: 5%;
   }
+
+  .image-ana{
+    height: 40vh;
+  }
+
+  .first-card-text{
+    font-size: 18px !important;
+  }
 }
