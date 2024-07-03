@@ -7,10 +7,10 @@ openModel.addEventListener("click", () => {
   modal.showModal();
 });
 
-openMdl.addEventListener("click", () => {
-  modal.showModal();
-});
-
 closeModel.addEventListener("click", () => {
   modal.close();
+});
+
+openMdl.addEventListener("click", () => {
+  modal.showModal();
 });
