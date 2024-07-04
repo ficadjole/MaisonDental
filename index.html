@@ -63,6 +63,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-dark open-button"
+                    data-i18n="form_button_text"
                   >
                     Zakažite konsultaciju
                   </button>
@@ -70,7 +71,9 @@
                     <div class="container-fluid align-items-center p-2">
                       <div class="row">
                         <div class="col">
-                          <h1>Zakažite konsultaciju</h1>
+                          <h1 data-i18n="form_button_text">
+                            Zakažite konsultaciju
+                          </h1>
                         </div>
                         <div class="col">
                           <img src="../images/Main logo black.svg" alt="" />
@@ -136,6 +139,7 @@
                             type="submit"
                             class="btn btn-outline-dark btn-block"
                             lng-tag="send_msg"
+                            data-i18n="form_button_text"
                           >
                             Zakažite termin
                           </button>
@@ -144,6 +148,7 @@
                           <button
                             type="button"
                             class="btn btn-outline-dark close-button"
+                            data-i18n="close_btn_form"
                           >
                             Zatvorite
                           </button>
@@ -176,8 +181,20 @@
                   ></button>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-lg">ENG</button>
-                  <button type="button" class="btn btn-lg">SRB</button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('en')"
+                  >
+                    ENG
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('srb')"
+                  >
+                    SRB
+                  </button>
                 </div>
               </div>
               <div class="offcanvas-body">
@@ -186,12 +203,16 @@
                     <a
                       class="nav-link active nav-bar-link"
                       aria-current="page"
-                      href="#"
+                      href="./index.html"
+                      data-i18n="home"
                       >POČETNA</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./o_nama.html"
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./o_nama.html"
+                      data-i18n="about_us"
                       >O NAMA</a
                     >
                   </li>
@@ -202,12 +223,16 @@
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      data-i18n="services"
                     >
                       USLUGE
                     </a>
                     <ul class="dropdown-menu dropdown-bg">
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li1"
                           >Minimalno invazivna estetska stomatologija</a
                         >
                       </li>
@@ -215,7 +240,10 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li2"
                           >Invisalign</a
                         >
                       </li>
@@ -235,16 +263,16 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#">CENOVNIK</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./kontakt.html"
-                      >KONTAK</a
+                    <a class="nav-link nav-bar-link" href="#" data-i18n="prices"
+                      >CENOVNIK</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#"
-                      >Zakazite konsultaciju</a
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./kontakt.html"
+                      data-i18n="contact"
+                      >KONTAK</a
                     >
                   </li>
                 </ul>
@@ -265,7 +293,10 @@
         <div class="container-fluid px-4 py-4 my-4 about-us-card">
           <div class="row justify-content-center">
             <div class="col-sm p-5 d-flex align-content-center flex-wrap">
-              <p class="fs-3 fw-bold text-break first-card-text">
+              <p
+                class="fs-3 fw-bold text-break first-card-text"
+                data-i18n="first_text_index"
+              >
                 U ordinaciji Maison Dental & Aesthetic, posvećeni smo etičkoj
                 stomatološkoj praksi, sa misijom da pacijentima pružimo
                 dugoročno očuvanje zdravlja, funkcije i estetike zuba. <br />
@@ -287,7 +318,7 @@
         <!-- Second card -->
         <div class="container-fluid px-4 py-4 text-center service-card">
           <div class="container-fluid pb-4">
-            <h1>USLUGE</h1>
+            <h1 data-i18n="first_header_index">USLUGE</h1>
           </div>
           <div class="row justify-content-center">
             <div class="col-sm">
@@ -299,7 +330,10 @@
                 />
                 <div class="card-body">
                   <a href="./minimal.html" class="links-pages">
-                    <h4 class="card-title text-decoration-underline">
+                    <h4
+                      class="card-title text-decoration-underline"
+                      data-i18n="first_service_name"
+                    >
                       MINIMALNO INVAZIVNA ESTETSKA STOMATOLOGIJA
                     </h4>
                   </a>
@@ -315,7 +349,10 @@
                 />
                 <div class="card-body">
                   <a href="./minimal.html" class="links-pages">
-                    <h4 class="card-title text-decoration-underline">
+                    <h4
+                      class="card-title text-decoration-underline"
+                      data-i18n="second_service_name"
+                    >
                       INVISALIGN
                     </h4></a
                   >
@@ -331,7 +368,10 @@
                 />
                 <div class="card-body">
                   <a href="./minimal.html" class="links-pages">
-                    <h4 class="card-title text-decoration-underline">
+                    <h4
+                      class="card-title text-decoration-underline"
+                      data-i18n="third_service_name"
+                    >
                       ANTI-AGEING I REGENERATIVNA ESTETSKA MEDICINA
                     </h4>
                   </a>
@@ -339,9 +379,15 @@
               </div>
             </div>
             <div class="container-fluid pt-4">
-              <h1>Zainteresovani ste za pregled</h1>
-              <p class="fs-5 fw-bold">*zakažite besplatnu konsultaciju*</p>
-              <button type="button" class="btn btn-outline-dark open-btn">
+              <h1 data-i18n="header_form">Zainteresovani ste za pregled</h1>
+              <p class="fs-5 fw-bold" data-i18n="form_comment">
+                *zakažite besplatnu konsultaciju*
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark open-btn"
+                data-i18n="form_button_text"
+              >
                 Zakažite konsultaciju
               </button>
             </div>
@@ -369,6 +415,7 @@
                         <a
                           href="./index.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="home_footer"
                           >Početna</a
                         >
                       </div>
@@ -379,6 +426,7 @@
                         <a
                           href="./o_nama.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="about_us_footer"
                           >O nama</a
                         >
                       </div>
@@ -389,6 +437,7 @@
                         <a
                           href="./minimal.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="services_footer"
                           >Usluge</a
                         >
                       </div>
@@ -411,6 +460,7 @@
                         <a
                           href="./kontakt.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="contact_footer"
                           >Kontakt</a
                         >
                       </div>
@@ -421,6 +471,7 @@
                         <a
                           href=""
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="priceslist_footer"
                           >Cenovnik</a
                         >
                       </div>
@@ -431,19 +482,19 @@
               <div class="col-md-4">
                 <div class="vstack p-2 gap-4 icons">
                   <div class="hstack gap-4 mobile-footer-icons">
-                    <a href="http://">
+                    <a href="https://www.instagram.com/smile_by_dr_ana/">
                       <ion-icon name="logo-instagram" size="large"></ion-icon>
                     </a>
-                    <a href="">
-                      <ion-icon name="logo-twitter" size="large"></ion-icon>
+                    <a href="https://wa.me/+381612343144">
+                      <ion-icon name="logo-whatsapp" size="large"></ion-icon>
                     </a>
                   </div>
                   <div class="hstack gap-4 mobile-footer-icons">
-                    <a href="">
+                    <a href="tel://0612343144">
                       <ion-icon name="call-sharp" size="large"></ion-icon>
                     </a>
 
-                    <a href="">
+                    <a href="mailto:info@maisondental.rs">
                       <ion-icon name="mail" size="large"></ion-icon>
                     </a>
                   </div>
@@ -459,5 +510,6 @@
       </div>
     </div>
     <script src="../js/java.js"></script>
+    <script src="../js/translate.js"></script>
   </body>
 </html>

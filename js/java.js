@@ -14,3 +14,5 @@ closeModel.addEventListener("click", () => {
 openMdl.addEventListener("click", () => {
   modal.showModal();
 });
+
+
