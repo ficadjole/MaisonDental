@@ -63,6 +63,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-dark open-button"
+                    data-i18n="form_button_text"
                   >
                     Zakažite konsultaciju
                   </button>
@@ -70,7 +71,9 @@
                     <div class="container-fluid align-items-center p-2">
                       <div class="row">
                         <div class="col">
-                          <h1>Zakažite konsultacije</h1>
+                          <h1 data-i18n="form_button_text">
+                            Zakažite konsultacije
+                          </h1>
                         </div>
                         <div class="col">
                           <img src="../images/Main logo black.svg" alt="" />
@@ -136,6 +139,7 @@
                             type="submit"
                             class="btn btn-outline-dark btn-block"
                             lng-tag="send_msg"
+                            data-i18n="form_button_text"
                           >
                             Zakažite termin
                           </button>
@@ -144,6 +148,7 @@
                           <button
                             type="button"
                             class="btn btn-outline-dark close-button"
+                            data-i18n="close_btn_form"
                           >
                             Zatvorite
                           </button>
@@ -176,8 +181,20 @@
                   ></button>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-lg">ENG</button>
-                  <button type="button" class="btn btn-lg">SRB</button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('en')"
+                  >
+                    ENG
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('srb')"
+                  >
+                    SRB
+                  </button>
                 </div>
               </div>
               <div class="offcanvas-body">
@@ -187,11 +204,15 @@
                       class="nav-link active nav-bar-link"
                       aria-current="page"
                       href="./index.html"
+                      data-i18n="home"
                       >POČETNA</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./o_nama.html"
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./o_nama.html"
+                      data-i18n="about_us"
                       >O NAMA</a
                     >
                   </li>
@@ -202,12 +223,16 @@
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      data-i18n="services"
                     >
                       USLUGE
                     </a>
                     <ul class="dropdown-menu dropdown-bg">
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li1"
                           >Minimalno invazivna estetska stomatologija</a
                         >
                       </li>
@@ -215,13 +240,22 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Invisalign</a>
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li2"
+                          >Invisalign</a
+                        >
                       </li>
                       <li>
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          href="./minimal.html"
+                          data-i18n="service_li3"
                           >Anti-ageing i regenartivna estetska medicina</a
                         >
                       </li>
@@ -233,10 +267,17 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#">CENOVNIK</a>
+                    <a class="nav-link nav-bar-link" href="#" data-i18n="prices"
+                      >CENOVNIK</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#">KONTAKT</a>
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./kontakt.html"
+                      data-i18n="contact"
+                      >KONTAKT</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -247,9 +288,14 @@
 
       <!--Content-->
       <div class="container-fluid px-4 py-4 about-us-card">
-        <h1 class="text-decoration-underline text-center">O nama</h1>
+        <h1
+          class="text-decoration-underline text-center"
+          data-i18n="header_about_us"
+        >
+          O nama
+        </h1>
         <div class="container-fluid text-card">
-          <p class="text-break text-center">
+          <p class="text-break text-center" data-i18n="first_text_index">
             U ordinaciji Maison Dental & Aesthetic , posvećeni smo etičkoj
             stomatološkoj praksi, sa misijom da pacijentima pružimo dugoročno
             očuvanje zdravlja, funkcije i estetike zuba. Sve stomatološke usluge
@@ -266,11 +312,11 @@
             </a>
           </div>
           <div class="col-sm p-5 d-flex align-content-center flex-wrap">
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text1">
               Dr Ana Miladinović je diplomirala na Stomatološkom Fakultetu
               Univerziteta u Beogradu 2008 godine.
             </p>
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text2">
               Nakon završenog staža i položenog stručnog ispita odlazi u London,
               Veliku Britaniju gde nostrifikuje diplomu i nastavlja rad u
               privatnoj praksi Početak svoje profesionalne karijere posvetila je
@@ -280,19 +326,19 @@
               svetskih stručnjaka.
             </p>
 
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text3">
               2017. godine postaje sertifikovani Invsalign provajder i do danas
               je uspešno tretirala stotine zadovoljnih pacijenata ovim
               revolucionarnim ortodontskim sistemom
             </p>
 
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text4">
               2018. godine završava postdiplomske studije iz savremene estetske
               i restaurativne stomatologije sa posebnim fokusom na minimalno
               invazivnu stomatologiju.
             </p>
 
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text5">
               Dr Ana se specijalizuje u minimalno invazivnim transformacijama
               osmeha koje između ostalih metoda, podrazumevaju upotrebu
               Invisalign folija za ispravljanje zuba i kompozitnih materijala
@@ -302,7 +348,7 @@
               nepotrebnog žrtvovanja zubnog tkiva.
             </p>
 
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text6">
               Dr Ana se od 2016. godine paralelno usavršava u oblasti estetske
               medicine i anti-ageing procedura a poslednjih godina i
               regenerativnoj estetskoj medicini upotrebom polinukleotida i
@@ -310,16 +356,23 @@
               izgleda vašeg lica i kože.
             </p>
 
-            <p class="text-break">
+            <p class="text-break" data-i18n="about_us_text7">
               Dr Miladinović redovno tretira internacionalne pacijente u
               Centralnom Londonu ,Wimpole Street ,Marylebone.
             </p>
 
             <div class="container-fluid pt-4 text-center">
-              <p class="fs-5 fw-bold text-consultation">
+              <p
+                class="fs-5 fw-bold text-consultation"
+                data-i18n="form_comment"
+              >
                 *zakažite besplatnu konsultaciju*
               </p>
-              <button type="button" class="btn btn-outline-dark open-btn">
+              <button
+                type="button"
+                class="btn btn-outline-dark open-btn"
+                data-i18n="form_button_text"
+              >
                 Zakažite konsultaciju
               </button>
             </div>
@@ -348,6 +401,7 @@
                         <a
                           href="./index.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="home_footer"
                           >Početna</a
                         >
                       </div>
@@ -358,6 +412,7 @@
                         <a
                           href="./o_nama.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="about_us_footer"
                           >O nama</a
                         >
                       </div>
@@ -368,6 +423,7 @@
                         <a
                           href="./minimal.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="services_footer"
                           >Usluge</a
                         >
                       </div>
@@ -390,6 +446,7 @@
                         <a
                           href="./kontakt.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="contact_footer"
                           >Kontakt</a
                         >
                       </div>
@@ -400,6 +457,7 @@
                         <a
                           href=""
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="priceslist_footer"
                           >Cenovnik</a
                         >
                       </div>
@@ -438,5 +496,6 @@
       </div>
     </div>
     <script src="../js/java.js"></script>
+    <script src="../js/translate.js"></script>
   </body>
 </html>

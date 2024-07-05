@@ -34,7 +34,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body class="bg">
+  <body class="bg" onload="">
     <div class="container-fluid p-0">
       <!--NavBar-->
       <div class="container-fluid nav">
@@ -63,6 +63,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-dark open-button"
+                    data-i18n="form_button_text"
                   >
                     Zakažite konsultaciju
                   </button>
@@ -70,7 +71,9 @@
                     <div class="container-fluid align-items-center p-2">
                       <div class="row">
                         <div class="col">
-                          <h1>Zakažite konsultacije</h1>
+                          <h1 data-i18n="form_button_text">
+                            Zakažite konsultacije
+                          </h1>
                         </div>
                         <div class="col">
                           <img src="../images/Main logo black.svg" alt="" />
@@ -136,6 +139,7 @@
                             type="submit"
                             class="btn btn-outline-dark btn-block"
                             lng-tag="send_msg"
+                            data-i18n="form_button_text"
                           >
                             Zakažite termin
                           </button>
@@ -144,6 +148,7 @@
                           <button
                             type="button"
                             class="btn btn-outline-dark close-button"
+                            data-i18n="close_btn_form"
                           >
                             Zatvorite
                           </button>
@@ -176,8 +181,20 @@
                   ></button>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-lg">ENG</button>
-                  <button type="button" class="btn btn-lg">SRB</button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('en')"
+                  >
+                    ENG
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('srb')"
+                  >
+                    SRB
+                  </button>
                 </div>
               </div>
               <div class="offcanvas-body">
@@ -187,11 +204,15 @@
                       class="nav-link active nav-bar-link"
                       aria-current="page"
                       href="./index.html"
+                      data-i18n="home"
                       >POČETNA</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./o_nama.html"
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./o_nama.html"
+                      data-i18n="about_us"
                       >O NAMA</a
                     >
                   </li>
@@ -202,12 +223,16 @@
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      data-i18n="services"
                     >
                       USLUGE
                     </a>
                     <ul class="dropdown-menu dropdown-bg">
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li1"
                           >Minimalno invazivna estetska stomatologija</a
                         >
                       </li>
@@ -215,7 +240,10 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li2"
                           >Invisalign</a
                         >
                       </li>
@@ -223,7 +251,10 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li3"
                           >Anti-ageing i regenartivna estetska medicina</a
                         >
                       </li>
@@ -235,10 +266,15 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#">CENOVNIK</a>
+                    <a class="nav-link nav-bar-link" href="#" data-i18n="prices"
+                      >CENOVNIK</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./kontakt.html"
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./kontakt.html"
+                      data-i18n="contact"
                       >KONTAKT</a
                     >
                   </li>
@@ -254,7 +290,10 @@
         <!--Minimalno invazivna stomatologija-->
 
         <div class="container-fluid text-center centar">
-          <h2 class="text-decoration-underline mt-2 mb-2">
+          <h2
+            class="text-decoration-underline mt-2 mb-2"
+            data-i18n="service_li1"
+          >
             Minimalno invazivna stomatologija
           </h2>
 
@@ -268,6 +307,7 @@
                   data-bs-target="#collapseOne"
                   aria-expanded="false"
                   aria-controls="collapseOne"
+                  data-i18n="minimal_first_question"
                 >
                   Koje su prednosti minimalno invazivne u odnosu na
                   tradicionalnu stomatologiju za pacijenta?
@@ -278,7 +318,10 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body text-start">
+                <div
+                  class="accordion-body text-start"
+                  data-i18n="minimal_first_answer"
+                >
                   Izbegavanjem nepotrebnog brušenja zdravog zubnog tkiva našim
                   pacijentima omogućavamo dugoročno očuvanje prirodne denticije
                   i minimalnu potrebu za budućim invazivnim tretmanima.<br />Edukacija
@@ -300,6 +343,7 @@
                   data-bs-target="#collapseTwo"
                   aria-expanded="false"
                   aria-controls="collapseTwo"
+                  data-i18n="minimal_second_question"
                 >
                   Šta kada je brušenje neizbežno?
                 </button>
@@ -309,7 +353,10 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body text-start">
+                <div
+                  class="accordion-body text-start"
+                  data-i18n="minimal_second_answer"
+                >
                   Za Vas biramo neinvazivne ili minimalno invazivne tehnike
                   preparacije i direktne (zubne ispune-plombe) ili indirektne
                   (inleje, onleje, vinire ili krunice) restauracije od
@@ -330,6 +377,7 @@
                   data-bs-target="#collapseThree"
                   aria-expanded="false"
                   aria-controls="collapseThree"
+                  data-i18n="minimal_third_question"
                 >
                   Sanjate da i vi imate "Hollywood smile"?
                 </button>
@@ -340,27 +388,32 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body text-start">
-                  Decenijama unazad trend "Holivudskog osmeha" ne gubi na
-                  popularnosti ali obično podrazumeva preparaciju (takozvano
-                  'brušenje') zuba pacijenta kako bi stomatolog kasnije dobijene
-                  patrljke prekrio krunicama ili mostovima. Ova radikalna metoda
-                  često vremenom dovodi do ireverzibilnog oštećenja pulpe tj
-                  nerva zuba, potpornog aparata zuba i u nekim slučajevima
-                  gubitka jednog ili više zuba. "Holivudske" transformacije
-                  osmeha u poslednje vreme dobijaju negativnu konotaciju i u
-                  Velikoj Britaniji su nazvani "Turkey teeth" po Turskom
-                  dentalnom turizmu gde ovaj trend podrazumeva nebezbedan, ultra
-                  brz protokol destruktivnog brušenja gde se kao rezultat
-                  dobijaju neprirodno beli i očigledno veštački zubi. U našoj
-                  ordinaciji ne podržavamo ovaj trend, naročito ne kod mladih
-                  pacijenata.<br /><br />Dobra vest je da možemo postići
-                  atraktivan i zdrav osmeh i bez oštećenja zuba! Imamo rešenje
-                  za svaku vrstu problema, bilo da je to nepravilnost položaja,
-                  oblika ili nedostatak jednog ili više zuba. Dr Ana se
-                  specijalizuje u minimalno invazivnim transformacijama osmeha
-                  koje pored ostalog uključuju treatman Invisalign folijama za
-                  korekciju položaja zuba i upotrebu kompozitnih materijala radi
-                  korekcije oblika i nijanse vaših prirodnih zuba.
+                  <p data-i18n="minimal_third_answer1">
+                    Decenijama unazad trend "Holivudskog osmeha" ne gubi na
+                    popularnosti ali obično podrazumeva preparaciju (takozvano
+                    'brušenje') zuba pacijenta kako bi stomatolog kasnije
+                    dobijene patrljke prekrio krunicama ili mostovima. Ova
+                    radikalna metoda često vremenom dovodi do ireverzibilnog
+                    oštećenja pulpe tj nerva zuba, potpornog aparata zuba i u
+                    nekim slučajevima gubitka jednog ili više zuba. "Holivudske"
+                    transformacije osmeha u poslednje vreme dobijaju negativnu
+                    konotaciju i u Velikoj Britaniji su nazvani "Turkey teeth"
+                    po Turskom dentalnom turizmu gde ovaj trend podrazumeva
+                    nebezbedan, ultra brz protokol destruktivnog brušenja gde se
+                    kao rezultat dobijaju neprirodno beli i očigledno veštački
+                    zubi. U našoj ordinaciji ne podržavamo ovaj trend, naročito
+                    ne kod mladih pacijenata.
+                  </p>
+                  <p data-i18n="minimal_third_answer2">
+                    Dobra vest je da možemo postići atraktivan i zdrav osmeh i
+                    bez oštećenja zuba! Imamo rešenje za svaku vrstu problema,
+                    bilo da je to nepravilnost položaja, oblika ili nedostatak
+                    jednog ili više zuba. Dr Ana se specijalizuje u minimalno
+                    invazivnim transformacijama osmeha koje pored ostalog
+                    uključuju treatman Invisalign folijama za korekciju položaja
+                    zuba i upotrebu kompozitnih materijala radi korekcije oblika
+                    i nijanse vaših prirodnih zuba.
+                  </p>
                 </div>
               </div>
             </div>
@@ -370,7 +423,12 @@
         <!--Invisalign-->
 
         <div class="container-fluid text-center centar">
-          <h2 class="text-decoration-underline mt-2 mb-2">Invisalign</h2>
+          <h2
+            class="text-decoration-underline mt-2 mb-2"
+            data-i18n="service_li2"
+          >
+            Invisalign
+          </h2>
 
           <div class="accordion mt-4" id="accordionExample">
             <div class="accordion-item">
@@ -382,6 +440,7 @@
                   data-bs-target="#collapseFour"
                   aria-expanded="false"
                   aria-controls="collapseFour"
+                  data-i18n="invi_first_question"
                 >
                   Šta je Invisalign ( srp. Invizalajn)?
                 </button>
@@ -391,7 +450,10 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body text-start">
+                <div
+                  class="accordion-body text-start"
+                  data-i18n="invi_first_answer"
+                >
                   Invisalign je jedini originalni , američki sistem patentiranih
                   folija (alajnera) za ispravljanje zuba . Ovim naprednim
                   sistemom mogu se ispraviti čak i veoma kompleksne
@@ -418,6 +480,7 @@
                   data-bs-target="#collapseFive"
                   aria-expanded="false"
                   aria-controls="collapseFive"
+                  data-i18n="invi_second_question"
                 >
                   Kako se Invisalign poredi sa drugim brendovima providnih
                   folija?
@@ -428,7 +491,10 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body text-start">
+                <div
+                  class="accordion-body text-start"
+                  data-i18n="invi_second_answer"
+                >
                   Invisalign alajneri se prave od patentiranog Smart track
                   materijala procesom 3D štampanja. Ovaj sofisticirani materijal
                   se karakteriše savršenom ravnotežom između čvrstoće i
@@ -448,6 +514,7 @@
                   data-bs-target="#collapseSix"
                   aria-expanded="false"
                   aria-controls="collapseSix"
+                  data-i18n="invi_third_question"
                 >
                   Koliko dugo traje terapija sa Invisalign folijama?
                 </button>
@@ -457,7 +524,10 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body text-start">
+                <div
+                  class="accordion-body text-start"
+                  data-i18n="invi_third_answer"
+                >
                   Dužina trajanja terapije zavisi od stepena nepravilnosti zuba.
                   Svakom pacijentu se na početku tretmana određuje individualni
                   plan terapije koji diktira broj folija. Svaka folija se nosi
@@ -586,7 +656,11 @@
             </div>
           </div>
 
-          <button type="button" class="btn btn-outline-dark open-btn mt-4">
+          <button
+            type="button"
+            class="btn btn-outline-dark open-btn mt-4"
+            data-i18n="form_button_text"
+          >
             Zakažite konsultaciju
           </button>
         </div>
@@ -612,6 +686,7 @@
                         <a
                           href="./index.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="home_footer"
                           >Početna</a
                         >
                       </div>
@@ -622,6 +697,7 @@
                         <a
                           href="./o_nama.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="about_us_footer"
                           >O nama</a
                         >
                       </div>
@@ -632,6 +708,7 @@
                         <a
                           href="./minimal.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="services_footer"
                           >Usluge</a
                         >
                       </div>
@@ -654,6 +731,7 @@
                         <a
                           href="./kontakt.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="contact_footer"
                           >Kontakt</a
                         >
                       </div>
@@ -664,6 +742,7 @@
                         <a
                           href=""
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="priceslist_footer"
                           >Cenovnik</a
                         >
                       </div>
@@ -701,5 +780,6 @@
       </div>
     </div>
     <script src="../js/java.js"></script>
+    <script src="../js/translate.js"></script>
   </body>
 </html>

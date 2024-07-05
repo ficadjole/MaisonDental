@@ -63,6 +63,7 @@
                   <button
                     type="button"
                     class="btn btn-outline-dark open-button"
+                    data-i18n="form_button_text"
                   >
                     Zakažite konsultaciju
                   </button>
@@ -70,7 +71,9 @@
                     <div class="container-fluid align-items-center p-2">
                       <div class="row">
                         <div class="col">
-                          <h1>Zakažite konsultacije</h1>
+                          <h1 data-i18n="form_button_text">
+                            Zakažite konsultacije
+                          </h1>
                         </div>
                         <div class="col">
                           <img src="../images/Main logo black.svg" alt="" />
@@ -136,6 +139,7 @@
                             type="submit"
                             class="btn btn-outline-dark btn-block"
                             lng-tag="send_msg"
+                            data-i18n="form_button_text"
                           >
                             Zakažite termin
                           </button>
@@ -144,6 +148,7 @@
                           <button
                             type="button"
                             class="btn btn-outline-dark close-button"
+                            data-i18n="close_btn_form"
                           >
                             Zatvorite
                           </button>
@@ -176,8 +181,20 @@
                   ></button>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-lg">ENG</button>
-                  <button type="button" class="btn btn-lg">SRB</button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('en')"
+                  >
+                    ENG
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg"
+                    onclick="changeLanguage('srb')"
+                  >
+                    SRB
+                  </button>
                 </div>
               </div>
               <div class="offcanvas-body">
@@ -187,11 +204,15 @@
                       class="nav-link active nav-bar-link"
                       aria-current="page"
                       href="./index.html"
+                      data-i18n="home"
                       >POČETNA</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./o_nama.html"
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./o_nama.html"
+                      data-i18n="about_us"
                       >O NAMA</a
                     >
                   </li>
@@ -202,12 +223,16 @@
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      data-i18n="services"
                     >
                       USLUGE
                     </a>
                     <ul class="dropdown-menu dropdown-bg">
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li1"
                           >Minimalno invazivna estetska stomatologija</a
                         >
                       </li>
@@ -215,7 +240,10 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li2"
                           >Invisalign</a
                         >
                       </li>
@@ -223,20 +251,32 @@
                         <hr class="dropdown-divider" />
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./minimal.html"
+                        <a
+                          class="dropdown-item"
+                          href="./minimal.html"
+                          data-i18n="service_li3"
                           >Anti-ageing i regenartivna estetska medicina</a
                         >
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./before.html">BEFOR/AFTER</a>
+                    <a class="nav-link nav-bar-link" href="./before.html"
+                      >BEFOR/AFTER</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="#">CENOVNIK</a>
+                    <a class="nav-link nav-bar-link" href="#" data-i18n="prices"
+                      >CENOVNIK</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-bar-link" href="./kontakt.html">KONTAKT</a>
+                    <a
+                      class="nav-link nav-bar-link"
+                      href="./kontakt.html"
+                      data-i18n="contact"
+                      >KONTAKT</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -250,21 +290,30 @@
         <div class="container-fluid centar">
           <div class="row">
             <div class="col-md-6 text-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.5688262646004!2d20.47945037667567!3d44.78959497819532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7064e1046171%3A0x99dc5fbac401b2be!2z0KLQuNC60LLQtdGI0LrQsCAyMiwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1719933390501!5m2!1ssr!2srs" width="600" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
-              </iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.5688262646004!2d20.47945037667567!3d44.78959497819532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7064e1046171%3A0x99dc5fbac401b2be!2z0KLQuNC60LLQtdGI0LrQsCAyMiwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1719933390501!5m2!1ssr!2srs"
+                width="600"
+                height="525"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="google-map"
+              ></iframe>
             </div>
             <div class="col-md-6 text-center links">
               <h1><strong>Maison Dental</strong></h1>
               <p class="fs-5">Tikveška 22, Novi Beograd</p>
-              
-              <p class="fs-5">Telefon: <a href="tel://0612343144" class="">
-                +381 61 23 43 144
-              </a></p>
-              
-              <p class="fs-5">Email: <a href="mailto:info@maisondental.rs">
-                info@maisondental.rs
-              </a></p>
 
+              <p class="fs-5">
+                Telefon:
+                <a href="tel://0612343144" class=""> +381 61 23 43 144 </a>
+              </p>
+
+              <p class="fs-5">
+                Email:
+                <a href="mailto:info@maisondental.rs"> info@maisondental.rs </a>
+              </p>
             </div>
           </div>
         </div>
@@ -290,6 +339,7 @@
                         <a
                           href="./index.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="home_footer"
                           >Početna</a
                         >
                       </div>
@@ -300,6 +350,7 @@
                         <a
                           href="./o_nama.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="about_us_footer"
                           >O nama</a
                         >
                       </div>
@@ -310,6 +361,7 @@
                         <a
                           href="./minimal.html"
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="services_footer"
                           >Usluge</a
                         >
                       </div>
@@ -332,6 +384,7 @@
                         <a
                           href=""
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="contact_footer"
                           >Kontakt</a
                         >
                       </div>
@@ -342,6 +395,7 @@
                         <a
                           href=""
                           class="link-underline link-underline-opacity-0"
+                          data-i18n="priceslist_footer"
                           >Cenovnik</a
                         >
                       </div>
@@ -380,5 +434,6 @@
       </div>
     </div>
     <script src="../js/java.js"></script>
+    <script src="../js/translate.js"></script>
   </body>
 </html>
