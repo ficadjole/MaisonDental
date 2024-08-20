@@ -71,9 +71,7 @@
                     <div class="container-fluid align-items-center p-2">
                       <div class="row">
                         <div class="col">
-                          <h1 data-i18n="form_button_text">
-                            Zakažite konsultacije
-                          </h1>
+                          <h1 data-i18n="text_form">Zakažite konsultacije</h1>
                         </div>
                         <div class="col">
                           <img src="../images/Main logo black.svg" alt="" />
@@ -124,13 +122,15 @@
                           />
                         </div>
                         <div class="row mt-2">
-                          <input
+                          <textarea
                             type="text"
                             name="Poruka"
                             class="form-control poruka"
                             placeholder="Vasa poruka/Message"
+                            rows="5"
+                            cols="30"
                             required
-                          />
+                          ></textarea>
                         </div>
                       </div>
                       <div class="row justify-content-between mt-3">
@@ -139,7 +139,7 @@
                             type="submit"
                             class="btn btn-outline-dark btn-block"
                             lng-tag="send_msg"
-                            data-i18n="form_button_text"
+                            data-i18n="text_form"
                           >
                             Zakažite termin
                           </button>
