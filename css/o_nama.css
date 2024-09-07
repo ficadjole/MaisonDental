@@ -52,18 +52,14 @@ p,
   background-color: #f7f5f2;
 }
 
-.text-card {
-  width: 60%;
-}
-
-.text-card p {
-  font-size: 28px;
+.text-break{
+  font-size: 20px;
 }
 
 .image-ana {
   background-image: url("../images/DrAna.jpeg");
-  height: 80vh;
-  width: 70%;
+  height: 55vh;
+  width: 55%;
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -95,14 +91,6 @@ p,
 
   .mobile-footer-icons {
     justify-content: center;
-  }
-
-  .text-card p {
-    font-size: 18px;
-  }
-
-  .text-card {
-    width: 100%;
   }
 
   .image-ana {
