@@ -52,7 +52,7 @@ p,
   background-color: #f7f5f2;
 }
 
-.slider-cards{
+.slider-cards {
   height: 35vh;
 }
 
@@ -110,7 +110,11 @@ p,
     font-size: 16px !important;
   }
 
-  .mini{
+  .mini {
     display: none;
+  }
+
+  .slider-cards {
+    height: 100%;
   }
 }
