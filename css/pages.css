@@ -62,7 +62,7 @@
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #f7f5f2!important;
+  background-color: #f7f5f2 !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -76,5 +76,9 @@
 
   .mobile-footer-icons {
     justify-content: center;
+  }
+
+  .button-mobile {
+    justify-content: center !important;
   }
 }

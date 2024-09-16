@@ -123,4 +123,8 @@ p,
   .slider-cards {
     height: 60vh;
   }
+
+  .button-mobile{
+    justify-content: center !important;
+  }
 }

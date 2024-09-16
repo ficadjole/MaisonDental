@@ -104,4 +104,8 @@
   .mobile-text {
     font-size: x-large !important;
   }
+
+  .button-mobile {
+    justify-content: center !important;
+  }
 }

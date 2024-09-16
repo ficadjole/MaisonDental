@@ -94,4 +94,8 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  .button-mobile {
+    justify-content: center !important;
+  }
 }

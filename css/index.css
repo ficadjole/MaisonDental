@@ -113,4 +113,8 @@ p,
   .first-card-text {
     font-size: 20px !important;
   }
+
+  .button-mobile {
+    justify-content: center !important;
+  }
 }
