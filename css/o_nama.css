@@ -89,9 +89,9 @@ p,
   color: #231f20;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1680px) {
   .slider-cards {
-    height: 95vh;
+    height: 50vh;
   }
 }
 
