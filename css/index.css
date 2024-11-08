@@ -117,4 +117,10 @@ p,
   .button-mobile {
     justify-content: center !important;
   }
+
+  .office-bg {
+    height: 20vh;
+    background-position: center;
+    background-size:contain;
+  }
 }
