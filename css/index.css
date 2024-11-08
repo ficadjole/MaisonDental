@@ -42,10 +42,10 @@
 }
 
 .office-bg {
-  background-image: url("../images/ordinacija.webp");
+  background-image: url("../images/oradinacija.webp");
   height: 70vh;
   width: auto;
-  background-position: center;
+  background-position: top;
   background-repeat: none;
   background-size: cover;
 }
@@ -58,7 +58,7 @@ p,
 }
 
 .image-ana {
-  background-image: url("../images/DrAna.webp");
+  background-image: url("../images/ana.webp");
   height: 70vh;
   width: 65%;
   background-position: center;
