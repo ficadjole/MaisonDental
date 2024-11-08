@@ -42,7 +42,7 @@
 }
 
 .office-bg {
-  background-image: url("../images/oradinacija.webp");
+  background-image: url("../images/ordinacija.jpg");
   height: 70vh;
   width: auto;
   background-position: top;
@@ -119,9 +119,8 @@ p,
   }
 
   .office-bg {
-    background-image: url("../images/ordinacija.jpg");
     height: 30vh;
     background-position: center;
-    background-size: contain;
+    background-size:cover;
   }
 }
