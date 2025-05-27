@@ -1,18 +1,11 @@
-const modal = document.querySelector("#modal");
-const openModel = document.querySelector(".open-button");
-const closeModel = document.querySelector(".close-button");
-const openMdl = document.querySelector(".open-btn");
+document.getElementById("redirect-btn").onclick = function () {
+  location.href = "https://booking.dentify.io/maison-dental/";
+};
 
-openModel.addEventListener("click", () => {
-  modal.showModal();
-});
+let provera = document.getElementById("redirect-btn-two");
 
-closeModel.addEventListener("click", () => {
-  modal.close();
-});
-
-openMdl.addEventListener("click", () => {
-  modal.showModal();
-});
-
-
+if (provera != null) {
+  provera.onclick = function () {
+    location.href = "https://booking.dentify.io/maison-dental/";
+  };
+}
