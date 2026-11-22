@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: https://www.maisondental.rs/sitemap.xml
+Allow: /
+
+Sitemap: https://maisondental.rs/sitemap.xml
