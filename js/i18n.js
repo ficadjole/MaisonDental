@@ -298,7 +298,7 @@
 
       /* INVISALIGN */
       'inv.hero.eyebrow':       'Ortodoncija',
-      'inv.hero.h1':            'Invisalign',
+      'inv.hero.h1':            'Invisalign Beograd — providne folije',
       'inv.hero.p':             'Jedini originalni američki sistem providnih folija za ispravljanje zuba. Diskretan, komforan, predvidiv.',
       'inv.h2.1':               'Šta je Invisalign?',
       'inv.p1':                 'Invisalign je jedini originalni, američki sistem patentiranih folija (alajnera) za ispravljanje zuba. Ovim naprednim sistemom mogu se ispraviti čak i veoma kompleksne nepravilnosti položaja zuba i zagrižaja. Ove udobne i gotovo neprimetne folije su posebno popularne među odraslom populacijom i zbog svog diskretnog izgleda, izbor poslovnih ljudi širom sveta.',
@@ -867,7 +867,7 @@
 
       /* INVISALIGN */
       'inv.hero.eyebrow':       'Orthodontics',
-      'inv.hero.h1':            'Invisalign',
+      'inv.hero.h1':            'Invisalign Beograd — providne folije',
       'inv.hero.p':             'The only original American system of clear aligners for straightening teeth. Discreet, comfortable, predictable.',
       'inv.h2.1':               'What is Invisalign?',
       'inv.p1':                 'Invisalign is the only original, American system of patented aligners for straightening teeth. This advanced system can correct even very complex positional irregularities of teeth and bite. These comfortable and almost invisible aligners are especially popular among adults and, due to their discreet appearance, are the choice of business people around the world.',
